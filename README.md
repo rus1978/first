@@ -1,7 +1,14 @@
-# mycookie.js v4 min 17.08.2015
-Быстрая запись / чтение cookie в среде javascript.
+Mycookie.js
+===========
 
+Быстрая запись / чтение cookie в среде javascript.  
 
+## Installation
+
+Download package or install with Bower and include `mycookie.min.js` in your document after including jQuery.
+
+## Версия
+v.4 17.08.2015
 
 
 ###Примеры использования:
@@ -12,23 +19,15 @@ mycookie('site_pass', '12345', -86400); //Удалить
 alert(mycookie('site_pass')); //Получить
 ```
 
-###По патчам
+С использованием патчей:
 ```javascript
-mycookie('site_pass', '12345');	//патч корень сайта "/"
+mycookie('site_pass', '12345');	//(default) - патч корень сайта "/"
 mycookie('site_pass', '12345', 0, '/cart/'); //конкректный патч "/cart/"
 mycookie('site_pass', '12345', 0, false); //автопатч - текущей страницы
 ```
 
 
-Parallax.js
-===========
 
-Simple parallax scrolling effect inspired by [Spotify.com](http://spotify.com/) implemented as a jQuery plugin  
-
-
-## Installation
-
-Download package or install with Bower and include `parallax.min.js` in your document after including jQuery.
 
 
 `Выделенный` текст
