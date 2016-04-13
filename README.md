@@ -19,11 +19,11 @@ mycookie('site_pass', '12345', -86400); //Удалить
 alert(mycookie('site_pass')); //Получить
 ```
 
-С использованием патчей:
+С использованием патчей - существуют на определенных страницах:
 ```javascript
-mycookie('site_pass', '12345');	//(default) - патч корень сайта "/"
-mycookie('site_pass', '12345', 0, '/cart/'); //конкректный патч "/cart/"
-mycookie('site_pass', '12345', 0, false); //автопатч - текущей страницы
+mycookie('site_pass', '12345');	//(default) - для всех страниц сайта
+mycookie('site_pass', '12345', 0, '/cart/'); //только для "/cart/"
+mycookie('site_pass', '12345', 0, false); //только для текущей страницы (автоопределение)
 ```
 
 
