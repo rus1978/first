@@ -1,7 +1,36 @@
-# first
-Тестовый
+# mycookie v4 min 17.08.2015
+Быстрая запись / чтение cookie в среде javascript.
 
 
+
+
+###Примеры использования:
+
+Установить на сессию
+```javascript
+mycookie('site_pass', '12345');
+```
+
+Установить на год
+```javascript
+mycookie('site_pass', '12345', 60*60*24*30*12);
+```
+
+Удалить
+```javascript
+mycookie('site_pass', '12345', -86400);
+```
+
+Получить
+```javascript
+ alert(mycookie('site_pass'));
+```
+
+
+//По патчам
+mycookie('site_pass', '12345');				патч корень сайта "/"
+mycookie('site_pass', '12345', 0, '/cart/');конкректный патч "/cart/"
+mycookie('site_pass', '12345', 0, false);	автопатч - текущей страницы
 
 
 Parallax.js
