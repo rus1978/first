@@ -7,9 +7,7 @@ function mycookie(name, value, seconds, path) {
 
 	var expires='';
 	if( seconds ){
-/*	    var date = new Date();
-   		date.setTime(date.getTime() + seconds*1000);
-*/		
+		
 		var date = new Date(new Date().getTime() + seconds*1000);
 		
 		expires='; expires ='+date.toUTCString();
@@ -21,6 +19,5 @@ function mycookie(name, value, seconds, path) {
 		path= ';path='+ path;
 	}
 	
-//	console.log( name+ '='+ value+ expires+ path );
 	document.cookie= name+ '='+ value+ expires+ path;
 }
